@@ -1,6 +1,6 @@
 # SwagBench
 
-[![CI](https://github.com/VirgoAgario/swagbench-forge/actions/workflows/ci.yml/badge.svg)](https://github.com/VirgoAgario/swagbench-forge/actions/workflows/ci.yml)
+[![CI](https://github.com/KyleHafner/swagbench-forge/actions/workflows/ci.yml/badge.svg)](https://github.com/KyleHafner/swagbench-forge/actions/workflows/ci.yml)
 
 A deterministic Minecraft Forge 1.18.2 dedicated-server benchmark harness for measuring tick performance without hiding noisy runs.
 
