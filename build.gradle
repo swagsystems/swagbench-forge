@@ -140,8 +140,9 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-    // Put repositories for dependencies here
-    // ForgeGradle automatically adds the Forge maven and Maven Central for you
+    // Declare Central explicitly so static dependency scanners can find Gson and JUnit.
+    // ForgeGradle also adds repositories at runtime, which Dependabot does not execute.
+    mavenCentral()
 
     // If you have mod jar dependencies in ./libs, you can declare them as a repository like so:
     // flatDir {

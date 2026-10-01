@@ -1,7 +1,16 @@
 version: 2
+registries:
+  spongepowered:
+    type: maven-repository
+    url: https://repo.spongepowered.org/repository/maven-public/
+    # Public registry: declaring it allows its host through Dependabot's proxy.
+    # No credentials are required.
+
 updates:
   - package-ecosystem: gradle
     directory: /
+    registries:
+      - spongepowered
     schedule:
       interval: monthly
     open-pull-requests-limit: 2
